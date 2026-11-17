@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="AP FLOW helps finance teams streamline supplier invoice processing, validation, matching and approvals.">
+  <title>AP FLOW — Accounts Payable Automation</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    <span data-i18n="announcement">A clearer way to manage accounts payable</span>
+    <a href="#how-it-works" data-i18n="learnMore">Discover how it works <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="AP FLOW home">
+        <img src="assets/logo.svg" alt="" class="brand-mark">
+        <span>AP<span class="brand-accent">FLOW</span></span>
+      </a>
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#platform" data-i18n="navPlatform">Platform</a>
+        <a href="#how-it-works" data-i18n="navHow">How it works</a>
+        <a href="#industries" data-i18n="navIndustries">Industries</a>
+        <a href="#accounting-firms" data-i18n="navFirms">Accounting firms</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch language">
+          <span class="language-icon">文</span><span id="languageLabel">العربية</span><span class="chevron">⌄</span>
+        </button>
+        <a class="button button-small button-primary nav-cta" href="#contact" data-i18n="navCta">Book a conversation <span>↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-dark" id="home">
+      <div class="hero-grid"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">ACCOUNTS PAYABLE, REIMAGINED</span></div>
+          <h1 data-i18n="heroTitle">From invoice chaos to <span class="gradient-text">financial control.</span></h1>
+          <p class="hero-description" data-i18n="heroDescription">AP FLOW helps businesses bring supplier invoices into one structured process — from document intake and data extraction to matching, review and export.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact" data-i18n="heroPrimary">Talk to our team <span>↗</span></a>
+            <a class="button button-ghost" href="#how-it-works"><span class="play-icon">▶</span><span data-i18n="heroSecondary">Explore the workflow</span></a>
+          </div>
+          <div class="hero-note"><span class="shield-icon">◇</span><span data-i18n="heroNote">Designed around your finance process, controls and approval rules.</span></div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustrative AP FLOW invoice dashboard">
+          <div class="visual-glow"></div>
+          <div class="dashboard-window">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>AP FLOW <small>WORKSPACE PREVIEW</small></span>
+              <div class="window-avatar">AF</div>
+            </div>
+            <div class="dashboard-content">
+              <div class="dash-heading"><div><small data-i18n="dashOverview">WORKSPACE OVERVIEW</small><h3 data-i18n="dashTitle">Invoice activity</h3></div><span class="dash-period" data-i18n="dashPeriod">Sample view · This month</span></div>
+              <div class="metric-grid">
+                <div class="metric-card"><span data-i18n="metricReceived">Received</span><strong>1,240</strong><small class="metric-neutral">↗ <span data-i18n="metricVolume">Invoice volume</span></small></div>
+                <div class="metric-card"><span data-i18n="metricProcessed">Processed</span><strong>1,102</strong><small class="metric-positive">● <span data-i18n="metricReviewed">Ready for review</span></small></div>
+                <div class="metric-card"><span data-i18n="metricExceptions">Exceptions</span><strong>86</strong><small class="metric-warning">● <span data-i18n="metricAttention">Needs attention</span></small></div>
+              </div>
+              <div class="dash-lower">
+                <div class="activity-card">
+                  <div class="activity-title"><strong data-i18n="recentActivity">Recent activity</strong><span data-i18n="viewAll">View all</span></div>
+                  <div class="activity-row"><div class="file-icon pdf">PDF</div><div class="activity-name"><b>Gulf Supplies LLC</b><small>INV-2048 · AED 12,450</small></div><span class="status status-green" data-i18n="statusMatched">Matched</span></div>
+                  <div class="activity-row"><div class="file-icon pdf">PDF</div><div class="activity-name"><b>Al Noor Trading</b><small>INV-2049 · AED 8,200</small></div><span class="status status-amber" data-i18n="statusReview">Review</span></div>
+                  <div class="activity-row"><div class="file-icon pdf">PDF</div><div class="activity-name"><b>Modern Parts Co.</b><small>INV-2050 · AED 4,780</small></div><span class="status status-blue" data-i18n="statusPending">Pending</span></div>
+                </div>
+                <div class="progress-card"><strong data-i18n="processingStatus">Processing status</strong><div class="progress-ring"><div><b>89%</b><small data-i18n="sample">Sample</small></div></div><small data-i18n="progressCaption">Illustrative workflow snapshot</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-tag tag-top"><span class="tag-check">✓</span><span data-i18n="floatingValidation">Validation complete</span></div>
+          <div class="floating-tag tag-bottom"><span class="tag-spark">✦</span><span data-i18n="floatingMatching">PO · GRN · Invoice matching</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span data-i18n="heroBottom">A connected workflow for finance teams and accounting partners</span><div class="bottom-rule"></div><span>01 — 05</span></div>
+    </section>
+
+    <section class="intro section-pad" id="platform">
+      <div class="container intro-grid">
+        <div class="section-kicker"><span>01</span><span data-i18n="introKicker">THE CHALLENGE</span></div>
+        <div class="intro-content">
+          <h2 data-i18n="introTitle">Invoices arrive from everywhere. Your process shouldn't feel scattered.</h2>
+          <p data-i18n="introText">Email attachments, PDFs, purchase orders, goods receipt records and approval requests can create disconnected work. AP FLOW is designed to bring these steps into a clearer, traceable workflow — while keeping people in control of decisions.</p>
+        </div>
+      </div>
+      <div class="container challenge-cards">
+        <article class="challenge-card"><span class="card-number">01</span><div class="line-icon">⇢</div><h3 data-i18n="challenge1Title">Scattered intake</h3><p data-i18n="challenge1Text">Supplier documents arrive through different channels and formats.</p></article>
+        <article class="challenge-card"><span class="card-number">02</span><div class="line-icon">⌕</div><h3 data-i18n="challenge2Title">Manual checks</h3><p data-i18n="challenge2Text">Teams repeatedly enter details and verify totals, references and duplicates.</p></article>
+        <article class="challenge-card"><span class="card-number">03</span><div class="line-icon">⇄</div><h3 data-i18n="challenge3Title">Disconnected matching</h3><p data-i18n="challenge3Text">Invoice details may need to be checked against purchase and receipt records.</p></article>
+        <article class="challenge-card"><span class="card-number">04</span><div class="line-icon">◎</div><h3 data-i18n="challenge4Title">Unclear follow-up</h3><p data-i18n="challenge4Text">Exceptions and approvals can be difficult to track across people and systems.</p></article>
+      </div>
+    </section>
+
+    <section class="workflow-section section-dark section-pad" id="how-it-works">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div class="section-kicker"><span>02</span><span data-i18n="workflowKicker">HOW IT WORKS</span></div>
+          <h2 data-i18n="workflowTitle">A more connected path for every invoice.</h2>
+          <p data-i18n="workflowText">A configurable workflow that helps your team move from incoming documents to reviewed, organized payable data.</p>
+        </div>
+        <div class="workflow-steps">
+          <article class="workflow-step"><div class="step-top"><span>01</span><div class="step-icon">⇣</div></div><h3 data-i18n="step1Title">Receive</h3><p data-i18n="step1Text">Collect invoices from supported email, PDF upload and WhatsApp Business channels.</p><div class="step-tags"><span>Email</span><span>PDF</span><span>WhatsApp</span></div></article>
+          <article class="workflow-step"><div class="step-top"><span>02</span><div class="step-icon">⌗</div></div><h3 data-i18n="step2Title">Extract</h3><p data-i18n="step2Text">Capture key invoice fields such as supplier, dates, tax, totals and line items.</p><div class="step-tags"><span>OCR</span><span>Data capture</span></div></article>
+          <article class="workflow-step"><div class="step-top"><span>03</span><div class="step-icon">✓</div></div><h3 data-i18n="step3Title">Validate</h3><p data-i18n="step3Text">Check required fields, calculations and potential duplicate invoices.</p><div class="step-tags"><span>Checks</span><span>Duplicates</span></div></article>
+          <article class="workflow-step"><div class="step-top"><span>04</span><div class="step-icon">⇄</div></div><h3 data-i18n="step4Title">Match</h3><p data-i18n="step4Text">Compare invoice details with available purchase order and goods receipt data.</p><div class="step-tags"><span>PO</span><span>GRN</span><span>Invoice</span></div></article>
+          <article class="workflow-step"><div class="step-top"><span>05</span><div class="step-icon">↗</div></div><h3 data-i18n="step5Title">Review & export</h3><p data-i18n="step5Text">Route exceptions for human review, record approvals and prepare structured exports.</p><div class="step-tags"><span>Approvals</span><span>CSV / Excel</span></div></article>
+        </div>
+        <div class="workflow-footnote"><span class="info-mark">i</span><span data-i18n="workflowFootnote">Automation supports the process; authorized people retain control of business approvals and payment decisions.</span></div>
+      </div>
+    </section>
+
+    <section class="capabilities section-pad">
+      <div class="container capabilities-layout">
+        <div class="capabilities-copy">
+          <div class="section-kicker"><span>03</span><span data-i18n="capKicker">CORE CAPABILITIES</span></div>
+          <h2 data-i18n="capTitle">Built around the details that matter.</h2>
+          <p data-i18n="capText">AP FLOW brings key accounts payable tasks into one coordinated process. The exact workflow is configured around each organization's documents, systems and approval policies.</p>
+          <a class="text-link" href="#contact" data-i18n="capLink">Discuss your workflow <span>↗</span></a>
+        </div>
+        <div class="capability-list">
+          <div class="capability-item"><span class="cap-icon">▤</span><div><h3 data-i18n="cap1Title">Multi-channel invoice intake</h3><p data-i18n="cap1Text">Bring supported invoice sources into one organized queue.</p></div><span class="cap-arrow">↗</span></div>
+          <div class="capability-item"><span class="cap-icon">⌗</span><div><h3 data-i18n="cap2Title">Structured data extraction</h3><p data-i18n="cap2Text">Capture important invoice fields for review and downstream processing.</p></div><span class="cap-arrow">↗</span></div>
+          <div class="capability-item"><span class="cap-icon">✓</span><div><h3 data-i18n="cap3Title">Validation & duplicate checks</h3><p data-i18n="cap3Text">Flag missing information, calculation issues and possible duplicates.</p></div><span class="cap-arrow">↗</span></div>
+          <div class="capability-item"><span class="cap-icon">⇄</span><div><h3 data-i18n="cap4Title">PO and GRN matching</h3><p data-i18n="cap4Text">Identify differences between invoice, order and receipt records where data is available.</p></div><span class="cap-arrow">↗</span></div>
+          <div class="capability-item"><span class="cap-icon">◎</span><div><h3 data-i18n="cap5Title">Human approvals & audit trail</h3><p data-i18n="cap5Text">Route items to authorized reviewers and keep a record of actions.</p></div><span class="cap-arrow">↗</span></div>
+          <div class="capability-item"><span class="cap-icon">⇧</span><div><h3 data-i18n="cap6Title">Export & system handoff</h3><p data-i18n="cap6Text">Prepare reviewed data for spreadsheets or agreed accounting-system workflows.</p></div><span class="cap-arrow">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="industries-section section-pad" id="industries">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker"><span>04</span><span data-i18n="industriesKicker">WHO WE SERVE</span></div>
+          <h2 data-i18n="industriesTitle">Designed for document-heavy finance operations.</h2>
+          <p data-i18n="industriesText">We start by understanding how invoices move through your organization, then configure the workflow to fit.</p>
+        </div>
+        <div class="industry-grid">
+          <article class="industry-card industry-featured"><div class="industry-art distribution-art"><span class="art-box art-box-one"></span><span class="art-box art-box-two"></span><span class="art-route"></span></div><div class="industry-content"><span class="industry-label" data-i18n="industryFocus">INITIAL FOCUS</span><h3 data-i18n="industry1Title">Distribution & wholesale</h3><p data-i18n="industry1Text">Supplier invoices, purchase orders, goods receipts and recurring high-volume processing.</p></div></article>
+          <article class="industry-card"><div class="industry-art oil-art"><span class="oil-tank"></span><span class="oil-pipe"></span></div><div class="industry-content"><h3 data-i18n="industry2Title">Oil, gas & industrial</h3><p data-i18n="industry2Text">Supplier, maintenance, equipment and service-related invoice workflows.</p></div></article>
+          <article class="industry-card"><div class="industry-art construction-art"><span class="crane crane-one"></span><span class="crane crane-two"></span></div><div class="industry-content"><h3 data-i18n="industry3Title">Construction</h3><p data-i18n="industry3Text">Project-related purchasing, supplier documents and review processes.</p></div></article>
+          <article class="industry-card"><div class="industry-art logistics-art"><span class="warehouse"></span><span class="warehouse-door"></span></div><div class="industry-content"><h3 data-i18n="industry4Title">Logistics & services</h3><p data-i18n="industry4Text">Transport, storage, subcontractor and recurring service invoices.</p></div></article>
+        </div>
+        <p class="industry-disclaimer" data-i18n="industryDisclaimer">Each sector has different controls and documents. Suitability and scope are confirmed during process discovery.</p>
+      </div>
+    </section>
+
+    <section class="partners-section section-dark section-pad" id="accounting-firms">
+      <div class="container partner-layout">
+        <div class="partner-copy">
+          <div class="section-kicker"><span>05</span><span data-i18n="partnerKicker">FOR ACCOUNTING PARTNERS</span></div>
+          <h2 data-i18n="partnerTitle">Give your team a more structured way to handle client invoices.</h2>
+          <p data-i18n="partnerText">AP FLOW can be configured to support accounting and bookkeeping firms that manage payable records for multiple business clients. Your team stays focused on accounting review and client service while the workflow helps organize invoice processing.</p>
+          <a class="button button-primary" href="#contact" data-i18n="partnerCta">Explore a partner workflow <span>↗</span></a>
+        </div>
+        <div class="partner-panel">
+          <div class="partner-panel-head"><span data-i18n="partnerPanelTitle">A collaborative operating model</span><span class="panel-status"><i></i> <span data-i18n="configured">Configurable</span></span></div>
+          <div class="partner-flow">
+            <div class="partner-node"><div class="node-icon">▥</div><div><b data-i18n="partnerNode1">Your client businesses</b><small data-i18n="partnerNode1Sub">Separate records and permissions</small></div></div>
+            <div class="flow-connector"><span></span><span></span><span></span></div>
+            <div class="partner-node active-node"><div class="node-icon">✳</div><div><b>AP FLOW</b><small data-i18n="partnerNode2Sub">Invoice workflow and automation</small></div></div>
+            <div class="flow-connector"><span></span><span></span><span></span></div>
+            <div class="partner-node"><div class="node-icon">▤</div><div><b data-i18n="partnerNode3">Accounting team</b><small data-i18n="partnerNode3Sub">Review, approvals and export</small></div></div>
+          </div>
+          <div class="partner-panel-foot"><span>↳</span><span data-i18n="partnerPanelFoot">Access is defined by each client's permissions and agreement.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section section-pad">
+      <div class="container video-layout">
+        <div class="video-copy">
+          <div class="section-kicker"><span>06</span><span data-i18n="videoKicker">SEE THE BIG PICTURE</span></div>
+          <h2 data-i18n="videoTitle">A clearer view of AP automation.</h2>
+          <p data-i18n="videoText">Watch the AP FLOW introduction to understand the challenges, workflow and possibilities for your finance operations.</p>
+          <span class="video-hint" data-i18n="videoHint">Our short introduction</span>
+        </div>
+        <div class="video-frame" id="videoFrame">
+          <div class="video-placeholder">
+            <div class="video-brand"><img src="assets/logo.svg" alt=""><span>AP FLOW</span></div>
+            <div class="video-play">▶</div>
+            <strong data-i18n="videoPlaceholder">AP FLOW — Introduction</strong>
+            <small data-i18n="videoReplace">Replace this placeholder with your published video link.</small>
+          </div>
+          <!-- Replace the placeholder above with an iframe when your video is hosted.
+               Example: <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="AP FLOW introduction" allowfullscreen></iframe> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section-pad" id="contact">
+      <div class="container cta-box">
+        <div class="cta-orb orb-one"></div><div class="cta-orb orb-two"></div>
+        <div class="cta-content">
+          <div class="section-kicker light-kicker"><span>07</span><span data-i18n="contactKicker">START A CONVERSATION</span></div>
+          <h2 data-i18n="contactTitle">Let's understand your invoice workflow.</h2>
+          <p data-i18n="contactText">Tell us how your team or firm currently handles supplier invoices. We can discuss whether an AP FLOW workflow is a fit.</p>
+          <div class="contact-actions">
+            <a class="button button-white" href="mailto:hello@apflow.example?subject=AP%20FLOW%20Enquiry" id="emailLink" data-i18n="emailCta">Email our team <span>↗</span></a>
+            <a class="button button-outline-white" href="#home" data-i18n="backTop">Back to top ↑</a>
+          </div>
+          <small class="contact-config-note" data-i18n="contactConfig">Before publishing, replace the example email address with your real business contact.</small>
+        </div>
+        <div class="cta-decoration"><div class="deco-ring ring-a"></div><div class="deco-ring ring-b"></div><div class="deco-core">AF</div><span class="deco-star star-a">✦</span><span class="deco-star star-b">✧</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="#home"><img src="assets/logo.svg" alt="" class="brand-mark"><span>AP<span class="brand-accent">FLOW</span></span></a><p data-i18n="footerTagline">A more connected workflow for accounts payable.</p></div>
+      <div class="footer-links"><a href="#platform" data-i18n="navPlatform">Platform</a><a href="#how-it-works" data-i18n="navHow">How it works</a><a href="#industries" data-i18n="navIndustries">Industries</a><a href="#accounting-firms" data-i18n="navFirms">Accounting firms</a></div>
+      <div class="footer-contact"><span data-i18n="footerContact">Have a workflow in mind?</span><a href="#contact" data-i18n="footerTalk">Let's talk ↗</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> AP FLOW. <span data-i18n="rights">All rights reserved.</span></span><span data-i18n="footerDisclaimer">Concept website. Capabilities are subject to implementation scope and validation.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
